@@ -1,99 +1,94 @@
-Welcome to the AWS CodeStar sample web application
-==================================================
+Project : ITOTS
 
-This sample code helps get you started with a simple Node.js web application
-deployed by AWS CodeDeploy and AWS CloudFormation to an Amazon EC2 instance.
+University Name: http://www.sjsu.edu/
 
-What's Here
------------
+Course: Cloud Technologies
 
-This sample includes:
+Professor Sanjay Garje
 
-* README.md - this file
-* app.js - this file contains the code for your application
-* appspec.yml - this file is used by AWS CodeDeploy when deploying the web
-  application to EC2
-* package.json - this file contains various metadata relevant to your Node.js
-  application such as dependencies
-* public/ - this directory contains static web assets used by your application
-* scripts/ - this directory contains scripts used by AWS CodeDeploy when
-  installing and deploying your application on the Amazon EC2 instance
-* tests/ - this directory contains unit tests for your application
-* template.yml - this file contains the description of AWS resources used by AWS
-  CloudFormation to deploy your infrastructure
-* template-configuration.json - this file contains the project ARN with placeholders used for tagging resources with the project ID
+Students: Manasi Sadanand Pai , Prarthana Hemanth , Akanksha Jaiswal
 
-Getting Started
----------------
+Project Introduction:
 
-These directions assume you want to develop on your local computer, and not
-from the Amazon EC2 instance itself. If you're on the Amazon EC2 instance, the
-virtual environment is already set up for you, and you can start working on the
-code.
+ITots is an application for any day care center. As parents, what is it that we are looking for while opting for a day care center for your little one?
 
-To work on the sample code, you'll need to clone your project's repository to your
-local computer. If you haven't, do that first. You can find instructions in the
-AWS CodeStar user guide.
+The main aspects that one would be looking for are:
 
-1. Install Node.js on your computer.  For details on available installers visit
-   https://nodejs.org/en/download/.
+• Security of the child
 
-2. Install NPM dependencies:
+• Learning
 
-        $ npm install
+ITots is an app that provides both these features. The security is taken care of by allowing the parent to upload pictures of the people who are authorized to pick up the child. At the center, a picture is taken and a facial comparison is done to ensure that each child is being picked up by the authorized person.
 
-2. Start the development server:
+Any parent, would love it if their child can learn some basic things while at the day care center. For this we have language and learning courses to teach the child. Since this is catered for very young children, the teaching is done using audio and images.
 
-        $ node app.js
+Sample Screen Shots:
 
-3. Open http://127.0.0.1:3000/ in a web browser to view your application.
+Landing Page: Landing Page
+![Image adminLandingPage](https://github.com/prar1612/AWS-Project2/blob/master/Images/adminLandingPage.png)
+Admin Login Page: Admin Login Page
+![Image adminLogin](https://github.com/prar1612/AWS-Project2/blob/master/Images/adminLogin.png)
+Admin Landing Page: Admin Landing Page
+![Image LandingPage](https://github.com/prar1612/AWS-Project2/blob/master/Images/LandingPage.png)
+Security – User asked to enter username: Security
+![Image security](https://github.com/prar1612/AWS-Project2/blob/master/Images/security.png)
+Webcam to click picture: Webcam
+![Image webcam](https://github.com/prar1612/AWS-Project2/blob/master/Images/webcam.png)
+On successful authentication: Authentication
+![Image authentication](https://github.com/prar1612/AWS-Project2/blob/master/Images/authentication.png)
+Learning Course – Admin can upload new content: Admin Learning
+![Image adminLearning](https://github.com/prar1612/AWS-Project2/blob/master/Images/adminLearning.png)
+Admin can upload image to any learning course: Admin Upload Learning
+![Image adminLearning](https://github.com/prar1612/AWS-Project2/blob/master/Images/adminLearning_1.png)
+Admin can upload content to the language course: Admin Language
+![Image adminLanguage](https://github.com/prar1612/AWS-Project2/blob/master/Images/adminLanguage.png)
+Cognito login for user to login: Cognito
+![Cognito](https://github.com/prar1612/AWS-Project2/blob/master/Images/cognito.png)
+User Landing Page: User Landing
+![User Landing](https://github.com/prar1612/AWS-Project2/blob/master/Images/userLandingPage.png)
+Parent can upload images of authorized people: User Upload
+![User Upload](https://github.com/prar1612/AWS-Project2/blob/master/Images/parentAuth.png)
+Courses – Learning Course: Learning Course
+![Learning Course](https://github.com/prar1612/AWS-Project2/blob/master/Images/LerningCourses.png)
+Sample Course: Sample Course
+![Sample Course](https://github.com/prar1612/AWS-Project2/blob/master/Images/LerningCourses_1.png)
+Sample Quiz: Sample Quiz
+![Image quiz](https://github.com/prar1612/AWS-Project2/blob/master/Images/quiz.png)
+Sample Language Course: Sample Language Course
+![Image Language](https://github.com/prar1612/AWS-Project2/blob/master/Images/languageCourse.png)
+Pre-requisites Set Up in AWS Account
 
-What Do I Do Next?
-------------------
+• AWS R53 
 
-Once you have a virtual environment running, you can start making changes to
-the sample Node.js web application. We suggest making a small change to
-/public/index.html first, so you can see how changes pushed to your project's
-repository are automatically picked up by your project pipeline and deployed to
-the Amazon EC2 instance. (You can watch the progress on your project dashboard.)
-Once you've seen how that works, start developing your own code, and have fun!
+• AWS CloudFront
 
-To run your tests locally, go to the root directory of the
-sample code and run the `npm test` command, which
-AWS CodeBuild also runs through your `buildspec.yml` file.
+• AWS S3
 
-To test your new code during the release process, modify the existing tests or
-add tests to the tests directory. AWS CodeBuild will run the tests during the
-build stage of your project pipeline. You can find the test results
-in the AWS CodeBuild console.
+• AWS EC2
 
-Learn more about AWS CodeBuild and how it builds and tests your application here:
-https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html
+• AWS Lambda
 
-Learn more about AWS CodeStar by reading the user guide.  Ask questions or make
-suggestions on our forum.
+• AWS Cognito
 
-User Guide: http://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
+• AWS Rekognition
 
-Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
+• AWS Polly
 
-How Do I Add Template Resources to My Project?
-------------------
+• AWS DynamoDB
 
-To add AWS resources to your project, you'll need to edit the `template.yml`
-file in your project's repository. You may also need to modify permissions for
-your project's worker roles. After you push the template change, AWS CodeStar
-and AWS CloudFormation provision the resources for you.
+• AWS SES
+How to set up and run project locally?
 
-See the AWS CodeStar user guide for instructions to modify your template:
-https://docs.aws.amazon.com/codestar/latest/userguide/how-to-change-project.html#customize-project-template
+Below packages need to be installed on local machine
 
-What Should I Do Before Running My Project in Production?
-------------------
+• Node.js pkg
 
-AWS recommends you review the security best practices recommended by the framework
-author of your selected sample application before running it in production. You
-should also regularly review and apply any available patches or associated security
-advisories for dependencies used within your application.
+• express generator
 
-Best Practices: https://docs.aws.amazon.com/codestar/latest/userguide/best-practices.html?icmpid=docs_acs_rm_sec
+• aws-sdk package
+
+• Nginix
+
+© 2020 GitHub, Inc.
+
+
