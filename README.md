@@ -6,7 +6,7 @@ Course: Cloud Technologies
 
 Professor Sanjay Garje
 
-Students: Manasi Sadanand Pai , Prarthana Hemanth , Akanksha Jaiswal
+Students: Akanksha Jaiswal, Manasi Sadanand Pai , Prarthana Hemanth 
 
 Project Introduction:
 
